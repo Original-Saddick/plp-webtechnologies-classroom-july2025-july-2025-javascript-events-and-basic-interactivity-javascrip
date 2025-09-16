@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST AID Edusolutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">BEST AID Edusolutions</h1>
+            <p class="tagline">Your Partner in Academic Excellence</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome-section">
+            <h2>Welcome to BEST AID Edusolutions</h2>
+            <p>We provide personalized guidance to help students achieve their academic and career goals. Our team of expert consultants is here to help you navigate the educational landscape with confidence.</p>
+        </section>
+        <hr>
+
+        <section id="services-section">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service-item">
+                    <button class="service-toggle">Career Counseling</button>
+                    <div class="service-details">
+                        <p>We help you explore career paths and choose the right educational journey to get there.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <button class="service-toggle">College Admissions</button>
+                    <div class="service-details">
+                        <p>Receive expert advice on application essays, interviews, and choosing the perfect university.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <button class="service-toggle">Academic Tutoring</button>
+                    <div class="service-details">
+                        <p>Get one-on-one tutoring in a variety of subjects to improve your grades and understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="success-section">
+            <h2>Our Impact</h2>
+            <div class="counter-box">
+                <p>We've helped <span id="student-count">0</span> students achieve their dreams.</p>
+                <button id="increment-btn">See Another Success Story</button>
+            </div>
+        </section>
+        <hr>
+
+        <section id="contact-section">
+            <h2>Contact Us Today!</h2>
+            <p>Fill out the form below to get in touch with one of our consultants.</p>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <div class="error-message" id="phoneError"></div>
+                </div>
+
+                <button type="submit">Send Inquiry</button>
+            </form>
+            <div id="formSuccess" class="success-message"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
